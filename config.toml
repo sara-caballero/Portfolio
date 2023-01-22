@@ -1,0 +1,147 @@
+baseURL = 'http://www.sara-caballero.com/'
+
+languageCode = "fr"
+languageName = "Français"
+
+title = "Sara Caballero"
+theme = "LoveIt"
+
+[author]
+  name = "Sara Caballero"
+  email = "saracaballerofr@hotmail.com"
+  link = ""
+  
+
+[menu]
+  [[menu.main]]
+    weight = 1
+    identifier = "propos"
+    name = "À propos"
+    url = "/propos/whoami"
+  [[menu.main]]
+    weight = 2
+    identifier = "posts"
+    name = "Blog"
+    url = "/posts/"
+  [[menu.main]]
+    weight = 3
+    identifier = "projets"
+    name = "Projets"
+    url = "/projets/"
+    [[menu.main]]
+    weight = 4
+    identifier = "cv"
+    name = "CV"
+    url = "/cv.pdf"
+  
+
+
+# whether to use git commit log
+enableGitInfo = true
+# whether to use emoji code
+enableEmoji = true
+# ignore some build errors
+ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
+
+
+[params]
+
+  # public git repo url only then enableGitInfo is true
+  gitRepo = "https://github.com/sara-caballero/sara-caballero.github.io"
+  dateFormat = "2006-01-0"
+# website title for Open Graph and Twitter Cards
+  title = "Sara Caballero"
+  # website description for RSS, SEO, Open Graph and Twitter Cards
+  description = "Sara Caballero"
+
+   [params.header]
+    # desktop header mode ["fixed", "normal", "auto"]
+    desktopMode = "fixed"
+    # mobile header mode ["fixed", "normal", "auto"]
+    mobileMode = "auto"
+    [params.header.title]
+      # title name
+      name = "Sara Caballero"
+
+  [params.footer]
+    enable = true
+    # LoveIt NEW | 0.2.0 Custom content (HTML format is supported)
+    custom = ''
+    # LoveIt NEW | 0.2.0 whether to show Hugo and theme info
+    hugo = true
+    # LoveIt NEW | 0.2.0 whether to show copyright info
+    copyright = true
+    # LoveIt NEW | 0.2.0 whether to show the author
+    author = true
+    # Site creation time
+    since = 2023
+    # license info (HTML format is supported)
+    license = '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
+
+  # Search config
+  [params.search]
+    enable = true
+    # type of search engine ["lunr", "algolia"]
+    type = "lunr"
+    # max index length of the chunked content
+    contentLength = 4000
+    # placeholder of the search bar
+    placeholder = ""
+    # LoveIt NEW | 0.2.1 max number of results length
+    maxResultLength = 10
+    # LoveIt NEW | 0.2.3 snippet length of the result
+    snippetLength = 30
+    # LoveIt NEW | 0.2.1 HTML tag name of the highlight part in results
+    highlightTag = "em"
+    # LoveIt NEW | 0.2.4 whether to use the absolute URL based on the baseURL in search index
+    absoluteURL = false
+    [params.search.algolia]
+      index = ""
+      appID = ""
+      searchKey = ""
+
+# Home page config
+  [params.home]
+    # LoveIt NEW | 0.2.0 amount of RSS pages
+    rss = 10
+    # Home page profile
+    [params.home.profile]
+      enable = true
+      # URL of avatar shown in home page
+      avatarURL = "avatar.png"
+      # LoveIt CHANGED | 0.2.7 title shown in home page (HTML format is supported)
+      title = "Sara Caballero"
+      # subtitle shown in home page (HTML format is supported)
+      subtitle = "Etudiante en informatique à l'IRUP. "
+      # whether to use typeit animation for subtitle
+      typeit = true
+      # whether to show social links
+      social = true
+      # LoveIt NEW | 0.2.0 disclaimer (HTML format is supported)
+      disclaimer = ""
+    # Home page posts
+    [params.home.posts]
+      enable = true
+      # special amount of posts in each home posts page
+      paginate = 6
+      # LoveIt DELETED | 0.2.0 replaced with hiddenFromHomePage in params.page
+      # default behavior when you don't set "hiddenFromHomePage" in front matter
+      defaultHiddenFromHomePage = false
+
+    [params.social]
+    GitHub = "sara-caballero"
+    Linkedin = "sara-caballero"
+    Email = "saracaballerofr@hotmail.com"
+    Phone = "0614170327"
+    RootMe= "saduka"
+
+
+
+
+
+# Markup related configuration in Hugo
+[markup]
+  # Syntax Highlighting (https://gohugo.io/content-management/syntax-highlighting)
+  [markup.highlight]
+    # false is a necessary configuration (https://github.com/dillonzq/LoveIt/issues/158)
+    noClasses = false
