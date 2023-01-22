@@ -25,6 +25,7 @@ Il est également intéressant de connaître GitHub Copilot, un outil de pair pr
 
 ## Introduction à Git
 ## Introduction à Git
+## Introduction à Git
 
 ### VSCode
 
